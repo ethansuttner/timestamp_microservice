@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="description" content="This API translates unix and natural time formats">
+	<meta name="keywords" content="time timestamp unix natural">
+	<title>Timestamp Microservice API</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+<h1 class="text-center header">Convert between Unix and Natural Time Formats</h1>
+<blockquote>
+    
+                A user can:
+    <ul>Pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+    <ul>If it does, it returns both the Unix timestamp and the Natural language form of that date.</ul>
+    <ul>If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+</blockquote>
+<h2>
+    Example Input:
+</h2>
+<a href="https://api-projects-ethansuttner.c9users.io/December%2025,%202016"><code>https://api-projects-ethansuttner.c9users.io/December%2025,%202016</code></a>
+<br>
+<a href="https://api-projects-ethansuttner.c9users.io/1482624000"><code>https://api-projects-ethansuttner.c9users.io/1482624000</code></a>
+<h2>
+    Example Output:
+</h2>
+<code>{"unix":1482624000,"natural":"December 25, 2016"}</code>
+</div>
+</body>
+</html>
